@@ -353,7 +353,7 @@ export const ForgeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
             existing_pain: 'No website, only word-of-mouth; misses high-margin new home construction orders.',
             demo_angle: 'Show him the live board-foot dimension calculator and custom mantle quote form.',
             objection_prep: 'If he says word of mouth is enough: "This brings you the commercial architects who pay top dollar."',
-            close_script: "It's built and ready to go live tonight for $250 flat."
+            close_script: "It's built and ready to go live tonight starting at $500 minimum custom launch with no ceiling."
           },
           source: 'auto',
           status: 'ready',
@@ -384,7 +384,7 @@ export const ForgeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
             existing_pain: 'Their listing only has a landline with no after-hours dispatch request.',
             demo_angle: 'Emergency field service button with immediate SMS alert to his mechanics.',
             objection_prep: 'Too busy: "This filters out tire-kickers and collects deposits before you roll the truck."',
-            close_script: "$250 flat fee. We turn it live tonight."
+            close_script: "$500 minimum custom launch fee (no ceiling). We turn it live tonight."
           },
           source: 'auto',
           status: 'ready',
@@ -455,10 +455,10 @@ export const ForgeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   }): Sale => {
     const rep_id = data.repId || currentUser?.id || 'user-rep-marcus';
     const rep = users.find(u => u.id === rep_id);
-    const amount = data.amount || 250.0;
+    const amount = data.amount || 500.0; // $500 minimum custom sale, no cap
     const subscription_upsell = !!data.subscriptionUpsell;
-    const commission_base = amount * 0.25; // 25% standard base
-    const commission_bonus = subscription_upsell ? 25.0 : 0.0;
+    const commission_base = amount * 0.25; // 25% standard base ($125 min on $500)
+    const commission_bonus = subscription_upsell ? 50.0 : 0.0; // $50 same-day bonus
     const total_commission = commission_base + commission_bonus;
     const now = new Date().toISOString();
 
@@ -566,7 +566,7 @@ export const ForgeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
           existing_pain: 'Loses high-value emergency leads to bigger competitors with fast mobile sites.',
           demo_angle: 'Show the instant price estimator and one-touch dispatch button.',
           objection_prep: 'If too busy: "This site automates quotes so you spend zero hours giving prices over the phone."',
-          close_script: '$250 flat launch. Live tonight.'
+          close_script: '$500 minimum custom launch (no cap). Live tonight.'
         },
         source,
         status: 'queued',

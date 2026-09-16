@@ -153,7 +153,7 @@ export const SEED_TARGETS: Target[] = [
       existing_pain: 'No automated trenching or culvert calculator; loses weekend emergency jobs to Lafayette contractors.',
       demo_angle: 'Pull up the spec site on your phone right now: look at the instant culvert install estimator and one-tap emergency dispatch button.',
       objection_prep: 'If he says he has enough work: "This filters out tire-kickers so you only dig 200ft+ jobs."',
-      close_script: "It's built and ready to map to broussardbackhoe.com tonight for $250 flat. Can I send the Stripe deposit link?"
+      close_script: "It's built and ready to map to broussardbackhoe.com tonight starting at $500 minimum custom launch with no ceiling. Can I send the Stripe deposit link?"
     },
     source: 'auto',
     status: 'ready',
@@ -184,7 +184,7 @@ export const SEED_TARGETS: Target[] = [
       existing_pain: 'Wasting 3 hours daily giving routine pricing over the counter.',
       demo_angle: 'Our spec site features the instant diagnostic quote tool. Customers pick their mower brand, see baseline service rates, and pre-pay their $50 drop-off deposit.',
       objection_prep: 'If he says he does not use computers: "Your customers do. 84% look up repair shops on mobile phones."',
-      close_script: 'We already imported your standard tune-up checklist. $250 flips it live by sundown.'
+      close_script: 'We already imported your standard tune-up checklist. $500 minimum custom launch flips it live by sundown.'
     },
     source: 'auto',
     status: 'ready',
@@ -215,7 +215,7 @@ export const SEED_TARGETS: Target[] = [
       existing_pain: 'His existing site was created in 2011 and has flash errors on mobile.',
       demo_angle: 'Show him the standing seam vs exposed fastener visual selector with instant price-per-square-foot estimate.',
       objection_prep: 'If he says his buddy handles his site: "Ask your buddy if he can make your site load in 0.4 seconds on 5G."',
-      close_script: '$250 launch fee. Zero monthly retainer unless you want custom additions.'
+      close_script: '$500 minimum custom launch fee. Zero monthly retainer unless you want custom additions.'
     },
     source: 'self_sourced',
     status: 'downloaded',
@@ -246,7 +246,7 @@ export const SEED_TARGETS: Target[] = [
       existing_pain: 'Broken website domain expired 6 months ago.',
       demo_angle: 'We rebuilt your full lawn calendar and treatment plan menu into a clean 1-page mobile powerhouse.',
       objection_prep: 'Cost objection: "One single annual aeration/spray contract is worth $900. This site pays for itself with one click."',
-      close_script: "Let's connect your domain today. $250 flat."
+      close_script: "Let's connect your domain today. $500 minimum custom launch."
     },
     source: 'auto',
     status: 'sold',
@@ -278,7 +278,7 @@ export const SEED_TARGETS: Target[] = [
       existing_pain: 'Zero web presence except an outdated Facebook group.',
       demo_angle: 'Mobile-first site highlighting emergency trailer repair and outboard diagnostics.',
       objection_prep: 'Owner retiring soon: "Great site helps you pass the business to your boy at a higher valuation."',
-      close_script: '$250 flat.'
+      close_script: '$500 minimum custom launch.'
     },
     source: 'auto',
     status: 'declined',
@@ -310,7 +310,7 @@ export const SEED_TARGETS: Target[] = [
       existing_pain: 'No portfolio photos online; relies solely on word-of-mouth.',
       demo_angle: 'Show the custom fabrication photo gallery and quick project quote request form.',
       objection_prep: 'Too busy: "This filters out tire-kickers asking for free estimates."',
-      close_script: '$250 one-time.'
+      close_script: '$500 minimum custom launch (no cap).'
     },
     source: 'auto',
     status: 'no_contact',
@@ -330,12 +330,12 @@ export const SEED_SALES: Sale[] = [
     target_id: 'target-4',
     customer_name: 'Acadian Turf & Weed Pros (Darren Fontenot)',
     customer_email: 'darren@acadianturf.com',
-    amount: 250.0,
+    amount: 500.0,
     subscription_upsell: true,
-    commission_base: 62.5,
-    commission_bonus: 25.0,
-    total_commission: 87.5,
-    payment_intent_id: 'pi_3Misfit_AcadianTurf_250',
+    commission_base: 125.0,
+    commission_bonus: 50.0,
+    total_commission: 175.0,
+    payment_intent_id: 'pi_3Misfit_AcadianTurf_500',
     closed_at: '2026-09-15T11:20:00Z',
     paid_at: '2026-09-15T18:00:00Z'
   },
@@ -346,12 +346,12 @@ export const SEED_SALES: Sale[] = [
     target_id: null,
     customer_name: 'Gautreaux Cajun Boudin & Cracklins',
     customer_email: 'gautreauxboudin@gmail.com',
-    amount: 250.0,
+    amount: 500.0,
     subscription_upsell: false,
-    commission_base: 62.5,
+    commission_base: 125.0,
     commission_bonus: 0.0,
-    total_commission: 62.5,
-    payment_intent_id: 'pi_3Misfit_Gautreaux_250',
+    total_commission: 125.0,
+    payment_intent_id: 'pi_3Misfit_Gautreaux_500',
     closed_at: '2026-09-08T15:45:00Z',
     paid_at: '2026-09-08T18:00:00Z'
   },
@@ -362,12 +362,12 @@ export const SEED_SALES: Sale[] = [
     target_id: null,
     customer_name: 'Acadiana Custom Fencing LLC',
     customer_email: 'office@acadianafence.com',
-    amount: 250.0,
+    amount: 750.0,
     subscription_upsell: true,
-    commission_base: 62.5,
-    commission_bonus: 25.0,
-    total_commission: 87.5,
-    payment_intent_id: 'pi_3Misfit_Fence_250',
+    commission_base: 187.5,
+    commission_bonus: 50.0,
+    total_commission: 237.5,
+    payment_intent_id: 'pi_3Misfit_Fence_750',
     closed_at: '2026-08-25T16:10:00Z',
     paid_at: '2026-08-25T18:30:00Z'
   }

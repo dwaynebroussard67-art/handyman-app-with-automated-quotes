@@ -74,7 +74,7 @@ export const Commissions: React.FC = () => {
             {currentUser.role === 'admin' ? 'GLOBAL COMMISSION LEDGER' : 'MY COMMISSION HISTORY'}
           </h1>
           <p style={{ color: '#94a3b8', fontSize: '0.95rem', margin: '4px 0 0', maxWidth: '650px' }}>
-            25% base commission on $250 spec site launch ($62.50) + $25 subscription upsell bonus + 25% on catalog additions. Paid same day!
+            25% base commission on custom sales ($500 minimum, no cap — $125 min payout) + $50 same-day subscription upsell bonus + 25% on catalog additions. Paid same day!
           </p>
         </div>
 
@@ -125,7 +125,7 @@ export const Commissions: React.FC = () => {
           <div style={{ fontFamily: 'Bebas Neue', fontSize: '2.5rem', color: '#fff', marginTop: '2px' }}>
             ${totalBaseCommission.toFixed(2)}
           </div>
-          <div style={{ fontSize: '0.75rem', color: '#64748b' }}>25% on $250 launch ($62.50 each)</div>
+          <div style={{ fontSize: '0.75rem', color: '#64748b' }}>25% on $500 min custom sales ($125 min each, no cap)</div>
         </div>
 
         <div style={{ background: '#0b0f19', border: '1px solid #334155', borderRadius: '12px', padding: '1.25rem' }}>
@@ -135,7 +135,7 @@ export const Commissions: React.FC = () => {
           <div style={{ fontFamily: 'Bebas Neue', fontSize: '2.5rem', color: '#c9a84c', marginTop: '2px' }}>
             ${totalBonusCommission.toFixed(2)}
           </div>
-          <div style={{ fontSize: '0.75rem', color: '#64748b' }}>$25 per recurring service close</div>
+          <div style={{ fontSize: '0.75rem', color: '#64748b' }}>$50 same-day bonus per recurring service close</div>
         </div>
 
         <div style={{ background: '#0b0f19', border: '1px solid #334155', borderRadius: '12px', padding: '1.25rem' }}>
@@ -159,9 +159,9 @@ export const Commissions: React.FC = () => {
       }}>
         <div style={{ padding: '1.25rem 1.5rem', borderBottom: '1px solid #1e293b', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <h2 style={{ fontFamily: 'Oswald', fontSize: '1.2rem', color: '#fff', margin: 0, letterSpacing: '0.06em', textTransform: 'uppercase' }}>
-            Base Spec Site Sales ({filteredSales.length})
+            Custom Spec Site Sales ({filteredSales.length})
           </h2>
-          <span style={{ fontSize: '0.8rem', color: '#64748b' }}>Standard Base: $250.00</span>
+          <span style={{ fontSize: '0.8rem', color: '#64748b' }}>$500 Minimum Sale, No Cap</span>
         </div>
 
         <div style={{ overflowX: 'auto' }}>
@@ -197,7 +197,7 @@ export const Commissions: React.FC = () => {
                   <td style={{ padding: '14px 16px', color: '#94a3b8' }}>${sale.commission_base.toFixed(2)}</td>
                   <td style={{ padding: '14px 16px' }}>
                     {sale.subscription_upsell ? (
-                      <span style={{ color: '#c9a84c', fontWeight: 600 }}>+$25.00</span>
+                      <span style={{ color: '#c9a84c', fontWeight: 600 }}>+$50.00</span>
                     ) : (
                       <span style={{ color: '#64748b' }}>—</span>
                     )}

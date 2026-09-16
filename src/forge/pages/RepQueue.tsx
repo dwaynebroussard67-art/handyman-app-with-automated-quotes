@@ -563,7 +563,7 @@ export const RepQueue: React.FC = () => {
                           <button
                             onClick={() => {
                               logTargetOutcome(t.id, 'sold');
-                              alert(`CONGRATULATIONS! Deal closed for ${t.business_name}. $62.50 base commission credited to your account.`);
+                              alert(`CONGRATULATIONS! Deal closed for ${t.business_name}. $125.00 base commission (25% on $500 min, no cap) credited to your account.`);
                             }}
                             style={{
                               background: '#10b981',
@@ -581,7 +581,7 @@ export const RepQueue: React.FC = () => {
                               gap: '6px'
                             }}
                           >
-                            <CheckCircle2 size={16} /> Sold ($250 Launch)
+                            <CheckCircle2 size={16} /> Sold ($500 Min Launch)
                           </button>
                           <button
                             onClick={() => {

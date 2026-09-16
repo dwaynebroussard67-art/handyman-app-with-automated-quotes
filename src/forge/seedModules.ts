@@ -22,7 +22,7 @@ At Forge Mode, we don't sell vaporware or pitch decks. We build functional, high
 1. **Research Filter**: Established local operators with 20+ reviews, real foot traffic, but ugly/slow/non-mobile sites or zero web presence.
 2. **Spec Site Build**: We build a fully branded, interactive site before we ever dial their number.
 3. **The 3-Minute Call**: We don't ask for permission to build. We say: *"I already built your site. Pull it up right now on your phone while I have you."*
-4. **The No-Brainer Close**: $250 flat setup or automated launch package. Your commission is paid immediately upon close.`,
+4. **The No-Brainer Close**: $500 minimum custom sale (no cap) or automated launch package. Your commission and same-day bonus are paid immediately upon close.`,
     action_item: 'Read partnering.html principles and write a 2-sentence summary of why building spec sites before calling eliminates buyer resistance.'
   },
   {
@@ -126,7 +126,7 @@ They refresh, and their new slogan is live on the web in 5 seconds.
 This destroys every bad agency memory they've ever had of waiting 6 months for a web designer.
 
 ### The Pricing Pivot
-> *"Normally agencies charge $2,500 to $4,000 for a site like this. Because we already built it and verified your services, you can take full ownership today for $250 flat. We connect your custom domain tonight, wire your payments, and hand you the keys."*`,
+> *"Normally agencies charge $2,500 to $4,000 for a custom site like this. Because we already built it and verified your services, you can take full ownership today starting at $500 minimum custom launch with no ceiling on scale. We connect your custom domain tonight, wire your payments, and hand you the keys."*`,
     action_item: 'Simulate a live edit change on a test spec site and record your time to publish.'
   },
   {
@@ -140,7 +140,7 @@ This destroys every bad agency memory they've ever had of waiting 6 months for a
     content: `## Objection Handling Blueprint
 
 ### Objection 1: "My nephew/buddy built me a Facebook page, that's enough."
-**Response**: *"Facebook is great for people who already know your name. But when an AC breaks or a fence blows down at 8 PM, people search Google, not Facebook. If your site isn't there with an instant quote, that $1,500 job goes straight to the guy down the road. For $250, this page captures the emergency customers you're currently handing away."*
+**Response**: *"Facebook is great for people who already know your name. But when an AC breaks or a fence blows down at 8 PM, people search Google, not Facebook. If your site isn't there with an instant quote, that $1,500 job goes straight to the guy down the road. At $500, this page captures the emergency customers you're currently handing away."*
 
 ### Objection 2: "We're already slammed, we don't need more leads."
 **Response**: *"Being slammed is great, but are you slammed with high-margin jobs or headache jobs? This site lets you filter out tire-kickers with our instant pricing calculator so you only talk to clients with serious budget."*
@@ -168,7 +168,7 @@ Every morning, Forge Mode feeds reps who completed training their queue of 10 pr
 1. **8:00 AM - Queue Inspection**: Review your ready targets. Inspect business names and preview links. Notice that contact details (phone and direct cell) remain hidden.
 2. **Commitment Download**: When you are genuinely ready to call, tap **Download Packet**. This reveals the phone number, contact name, and customized pitch notes.
 3. **Outcome Logging**:
-   - **Sold**: Creates a sale record ($250 base -> $62.50 commission instantly credited).
+   - **Sold**: Creates a sale record ($500 minimum base -> $125.00 commission instantly credited, plus $50 same-day bonus on subscription upsell).
    - **Declined**: Mark as declined with quick notes (owner retired, out of business, hard pass).
 4. **The Soft Mark (No Contact)**:
    - Any ready target unworked rolls over the following morning to \`no_contact\`.
@@ -201,7 +201,7 @@ When Brenda sees that our site has an automated quote calculator that calculates
     day_number: 30,
     title: 'Mid-Point Milestone: Upsells, Additions & Expansion Revenue',
     phase: 'Graduated Field Practice',
-    summary: 'Turning a $250 base sale into $750+ client lifetime value with the Addition Request pipeline.',
+    summary: 'Turning a $500 minimum base sale into $1,500+ client lifetime value with the Addition Request pipeline.',
     read_time_minutes: 14,
     display_order: 9,
     content: `## The Post-Sale Upsell Machine

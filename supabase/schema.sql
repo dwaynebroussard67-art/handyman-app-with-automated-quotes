@@ -88,16 +88,16 @@ CREATE TABLE IF NOT EXISTS public.targets (
 );
 
 -- 6. SALES (Closed deals & commission tracking)
--- Base sale: $250 spec site package -> $62.50 base commission (25%) + optional recurring subscription upsell
+-- Minimum custom sale: $500.00 (no cap) -> 25% base commission ($125.00 min) + optional $50 same-day subscription upsell bonus
 CREATE TABLE IF NOT EXISTS public.sales (
   id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   rep_id UUID NOT NULL REFERENCES public.users(id) ON DELETE CASCADE,
   target_id UUID REFERENCES public.targets(id) ON DELETE SET NULL,
   customer_name TEXT NOT NULL,
   customer_email TEXT,
-  amount NUMERIC(10, 2) NOT NULL DEFAULT 250.00,
+  amount NUMERIC(10, 2) NOT NULL DEFAULT 500.00,
   subscription_upsell BOOLEAN NOT NULL DEFAULT FALSE,
-  commission_base NUMERIC(10, 2) NOT NULL DEFAULT 62.50,
+  commission_base NUMERIC(10, 2) NOT NULL DEFAULT 125.00,
   commission_bonus NUMERIC(10, 2) NOT NULL DEFAULT 0.00,
   payment_intent_id TEXT,
   closed_at TIMESTAMPTZ DEFAULT NOW(),
